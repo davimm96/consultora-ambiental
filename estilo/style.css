@@ -1,0 +1,567 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+} 
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#logo {
+    width: 274px;
+    height: 84px;
+    position: relative;
+    bottom: 20px;
+}
+
+#textoimg a, #textoimg2 a {
+    text-decoration: none;
+    color: green;
+}
+ 
+/*Efeito parallax*/
+.parallax {
+    background-image: url("../img/img.jpg");
+    height: 120vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax2 {
+    background-image: url("../img/img.jpg");
+    height: 40vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider */
+@keyframes animacao {
+    0% {
+      transform: translateX(150px); 
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-80px); 
+      opacity: 0.5; 
+    }
+    100% {
+      transform: translateX(-300);
+      opacity: 1;
+    }
+  }
+  
+.animaObjeto {
+    animation: animacao 2s ease-in-out;
+    position: absolute;
+    top: 522px;
+    width: 90%;
+  }
+
+.aspas {
+    display: inline;
+    margin-right: 14px;
+    font-size: 96px;
+    position: relative;
+    bottom: 38px;
+}
+
+.texto { 
+    width: 100%;
+    font-size: 2em;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    z-index: 6;
+    position: relative;
+    box-shadow: 0 .1em .5em #2d2d2d;
+    display: block;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.autorFrase {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    top: -160px;
+    left: 62px;
+}
+
+#textoimg, #textoimg2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    position: fixed;
+    z-index: 5;
+    background-color: #0000009e;
+    width: 100%;
+    height: 125vh;
+}
+
+.textoParallax1 {
+    display: block;
+}
+
+.textoParallax2, .textoParallax3, .textoParallax4 {
+    display: none;
+}
+
+.textoParallax1, .textoParallax2, .textoParallax3, .textoParallax4 {
+    border-top: 10px red solid;
+    padding-right: 54px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+
+.frase {
+    position: relative;
+    top: -110px;
+    left: 65px;
+}
+
+/* Conteúdo */
+#whatsapp {
+    width: 37px;
+    height: 36px;
+    position: relative;
+    top: 10;
+}
+
+#servicosTitulo, #sobreMim h1, #contato h1 {
+    width: calc(95% - 10px);
+    height: 50px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 19px 0px 19px 0px;
+}
+
+hr {
+    color: green;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#texto {
+    font-size: 25px;
+}
+
+#pgrsIntro, #consultoriaIntro, #sobreMimIntro, #licenciamentoIntro, #ccaIntro {
+    display: flex;
+}
+
+#consultoriaImg, #pgrsImg, #simoniImg, #licenciamentoImg, #ccaImg  {
+    width: 220px;
+    height: 180px;
+}
+
+#simoniImg  {
+    width: 248px;
+    height: 224px;
+    margin-right: 15px; 
+}
+
+#pgrsTexto, #consultoriaTexto, #licenciamentoTexto {
+    border-bottom: green dotted 2px;
+    padding-bottom: 50px;
+    padding-top: 50px;  
+}
+
+#ccaTexto {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#sobreMim {
+    padding-bottom: 50px;
+}
+
+#serivos, #licenciamentoTexto, #pgrsTexto, #ccaTexto, 
+#consultoriaTexto, #sobreMim, #contato {
+    width: 70%;
+}
+
+/*Menu*/
+#blockMenu {
+    font-size: 2em;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuSpace {
+    position: relative;
+    top: 7px;
+}
+
+#sobreMimMenu, #servicosMenu, #paginaInicialMenu, #contatoMenu{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 7;
+    color: white;
+    text-decoration: none;
+}
+
+#sobreMimMenu:hover, #servicosMenu:hover, #paginaInicialMenu:hover, #contatoMenu:hover,
+#pgrs:hover, #consultoria:hover, #la:hover, #cca:hover  {
+    color: green;
+    transition-duration: 0.5s;
+}
+
+.efeitoMenu {
+    transition-duration: 1s;
+}
+
+
+/*Contato*/
+form {
+    width: 500px;
+    margin: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+#contatoBloco {
+    display: flex;
+}
+
+#contato ul li {
+    list-style: none;
+}
+
+#contato {
+    width: 70%;
+}
+
+#textoWhats a {
+    text-align: center;
+    background-color: rgb(197, 197, 197);
+    color: green;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 16px 0px 15px 0px;
+    text-decoration: none;
+}
+
+#textoWhats a:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+/*Roda-pé*/
+footer {
+    height: 11vh;
+}
+
+.textorodape {
+    font-size: 13px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    letter-spacing: .3em;
+    color: white;
+    text-shadow: 0 0 0.1em #DCDCDC;
+    position: fixed;
+    bottom: 0;
+    z-index: 3; 
+    width: 100%;
+}
+
+#praCima {
+    position: fixed;
+    z-index: 999;
+    display: block;
+    bottom: 12px;
+    right: 12px;
+}
+
+#praCima img {
+    width: 60px;
+    height: 60px;
+}
+
+/*Menu mobile*/
+#btnMenuMobile, #btnMenuMobileFechar {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    bottom: -5px
+}
+
+#btnMenuMobileFechar {
+    bottom: -10px
+}
+
+/* Mobile */
+@media (max-width: 1200px){
+    form {
+        width: 360px;
+    }
+}
+
+@media (min-width: 1200px){
+    form {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1000px){
+    #menuSpace {
+        position: absolute;
+        top: 134px;
+        display: none;
+        left: 38px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+    }
+
+    #sobreMimMenu, #servicosMenu, #sobreMimMenu, #contatoMenu{
+        display: block;
+
+    }
+
+    #btnMenuMobile {
+        display: block;
+    }
+
+    #contato, #sobreMim, #sobreMim, #ccaTexto, #pgrsTexto,
+    #licenciamentoTexto, #consultoriaTexto{
+        width: 95%;
+    }
+
+    #simoniImg {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1360px){
+    #textoImg, #textoImg2 {
+        font-size: 2em;
+    }
+
+    .autorFrase {
+        top: -141px
+    }
+
+    .animaObjeto {
+        width: 84%;
+    }
+}
+
+@media (max-width: 1200px){
+    .animaObjeto {
+        top: 350px;
+    }
+
+    .parallax2 {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 777px){
+    .autorFrase {
+        top: -124px;
+    }
+
+    #contatoBloco {
+        display: block;
+    }
+
+    #contatoOutros {
+        margin-top: 39px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    #praCima img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #praCima {
+        bottom: 5px;
+        right: 5px;
+    }
+
+
+    #pgrsIntro, #consultoriaIntro, #sobreMimIntro, #licenciamentoIntro, #ccaIntro {
+        display: block;
+    }
+
+    #consultoriaImg, #pgrsImg, #simoniImg, #licenciamentoImg, #ccaImg {
+        margin-bottom: 15px;
+        width: 95%;
+        height: 358px;
+    }
+
+    #simoniImg {
+        width: 95%;
+        height: 603px;
+        margin-bottom: 15px;
+    }
+
+    #textoImg, #textoImg2 {
+        font-size: 21px;
+    }
+
+  
+}
+
+@media (max-width: 600px){
+    #simoniImg {
+        height: 450px;
+    }
+}
+
+@media (max-width: 500px){
+    #simoniImg {
+        height: 330px;
+    }
+}
+
+@media (max-width: 400px){
+    #simoniImg {
+        height: 400px;
+    }
+
+    #menuSpace {
+        top: 96px;
+    }
+
+    #consultoriaImg, #pgrsImg, #simoniImg, #licenciamentoImg, #ccaImg {
+        height: 360px;
+    }
+
+    .animaObjeto {
+        width: 75%;
+    }
+
+
+    #servicosTitulo, #sobreMim h1, #contato h1 {
+        font-size: 28px;
+    } 
+
+}
+
+@media (max-width: 400px){
+    #consultoriaImg, #pgrsImg, #simoniImg, #licenciamentoImg, #ccaImg {
+        height: 270px;
+    }
+}
+
+@media (max-width: 300px){
+    #simoniImg {
+        height: 250px;
+    }
+
+    #logo {
+        width: 198px;
+    }
+
+    
+}
+
+@media (min-width: 777px){
+    #contatoBloco {
+        display: flex;
+    }
+
+    #contatoOutros {
+        margin-top: 0px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+
+    #pgrsIntro, #consultoriaIntro, #sobreMimIntro, #licenciamentoIntro, #ccaIntro {
+        display: flex;
+    }
+
+    #consultoriaImg, #pgrsImg, #simoniImg, #licenciamentoImg, #ccaImg {
+        width: 300px;
+        height: 180px;
+        margin-right: 15px;
+        float: left;  
+    }
+
+    #simoniImg {
+        width: 300px;
+        height: 224px;
+        margin-right: 15px; 
+    }
+}
+
+@media (min-width: 1000px){
+    #btnMenuMobile, #btnMenuMobileFechar {
+        display: none!important;
+    }
+
+    #menuSpace {
+        display: block!important;
+        position: relative;
+        top: 7px;
+    }
+    
+    #sobreMimMenu, #servicosMenu, #sobreMimMenu, #contatoMenu {
+        display: inline!important;
+    }
+}
