@@ -16,17 +16,17 @@
                 <div id="menu">
                     <img src="img/menu.png" id="btnMenuMobile">
                     <img src="img/fechar-menu.png" id="btnMenuMobileFechar">
-                    <div id="menuSpace">
+                    <nav id="menuSpace">
                         <a id="servicosMenu" class="menu-link" href="#servicos">Serviços</a>
                         <a id="sobreMimMenu" class="menu-link" href="#sobreMim">Sobre mim</a>
                         <a id="contatoMenu" class="menu-link" href="#contato">Contato</a>
-                    </div>
+                    </nav>
                 </div>
             </section>
             <!--Parallax e slider-->
             <section class="parallax">
                 <div id="textoimg">
-                    <div class="textoParallax1 animaObjeto">
+                    <aside class="textoParallax1 animaObjeto">
                         <div class="aspas">‘‘</div>
                         <div class="frase">
                             "O que fazemos à natureza, fazemos a nós mesmos."
@@ -34,8 +34,8 @@
                         <div class="autorFrase">
                             – David Suzuki
                         </div>
-                    </div>
-                    <div class="textoParallax2 animaObjeto">
+                    </aside>
+                    <aside class="textoParallax2 animaObjeto">
                         <div class="aspas">‘‘</div>
                         <div class="frase">
                             "A natureza nunca desiste de nós."
@@ -43,8 +43,8 @@
                         <div class="autorFrase">
                             – Albert Einstein
                         </div>
-                    </div>
-                    <div class="textoParallax3 animaObjeto">
+                    </aside>
+                    <aside class="textoParallax3 animaObjeto">
                         <div class="aspas">‘‘</div>
                         <div class="frase">
                             "Preservar o meio ambiente é uma responsabilidade de todos."
@@ -52,8 +52,8 @@
                         <div class="autorFrase">
                             – Ban Ki-moon
                         </div>
-                    </div>
-                    <div class="textoParallax4 animaObjeto">
+                    </aside>
+                    <aside class="textoParallax4 animaObjeto">
                         <div class="aspas">‘‘</div>
                         <div class="frase">
                             "O futuro dependerá do que fazemos no presente."
@@ -61,15 +61,15 @@
                         <div class="autorFrase">
                             – Mahatma Gandhi
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </section>
         </header>
         <main>
             <!--Conteúdo-->
-            <article class="texto" id="texto">
-                <div id="servicos">
-                    <div id="consultoriaTexto">
+            <div class="texto" id="texto">
+                <section id="servicos">
+                    <article id="consultoriaTexto">
                         <h1 id="servicosTitulo">Serviços</h1><br><br><br>
                         <h2>Consultoria</h2><br>
                          <img src="img/consultoria.jpg" id="consultoriaImg">
@@ -84,8 +84,8 @@
                         Meu compromisso é auxiliar sua empresa a adotar práticas que não apenas protejam o meio ambiente, mas também agreguem 
                         valor à sua marca e fortalecem sua posição no mercado.
                         </p>
-                    </div>
-                    <div id="licenciamentoTexto">
+                    </article>
+                    <article id="licenciamentoTexto">
                         <h2>Licenciamento Ambiental</h2><br>
                         <img src="img/licenciameto.jpg" id="licenciamentoImg">
                         <p>
@@ -108,8 +108,8 @@
                         desenvolvimento econômico e preservação ambiental. Se sua empresa precisa de suporte para o licenciamento ambiental, conte 
                         comigo para alcançar a regularização de forma eficiente e responsável.
                         </p>
-                    </div>
-                    <div id="pgrsTexto">
+                    </article>
+                    <article id="pgrsTexto">
                         <h2>PGRS</h2><br>
                         <img src="img/pgrs.jpg" id="pgrsImg">
                         <p>
@@ -133,8 +133,8 @@
                         Se sua empresa busca alinhar-se às boas práticas de gestão ambiental e implementar um PGRS que realmente faça a diferença, conte 
                         comigo para criar soluções que promovam sustentabilidade e eficiência no gerenciamento de resíduos sólidos.
                         </p>
-                    </div>
-                    <div id="ccaTexto">
+                    </article>
+                    <article id="ccaTexto">
                         <h2>Certidão de Conformidade Ambiental</h2><br>
                         <img src="img/cca.jpg" id="ccaImg">
                         <p>
@@ -161,9 +161,9 @@
                         você busca regularizar seu empreendimento e assegurar a conformidade com as normas ambientais, conte com minha experiência e 
                         dedicação para facilitar esse processo e alcançar resultados que beneficiem tanto sua empresa quanto o meio ambiente.
                         </p>
-                    </div>
-                </div><br><br>
-                <div id="sobreMim">
+                    </article>
+                </section><br><br>
+                <article id="sobreMim">
                     <h1>Sobre mim</h1><br><br><br>
                     <p>Simoni Michaelsen</p>
                     <p>Gestora Ambiental - CRQ 222241</p>
@@ -177,11 +177,11 @@
                     respeitando o meio ambiente e promovendo práticas responsáveis.</p>
                     <br><br>
                     <p>Vamos juntos cuidar do meio ambiente! ☘️🍀</p>
-                </div><br><br>
-                <div id="contato">
+                </article><br><br>
+                <section id="contato">
                     <h1>Entre em contato</h1><br><br><br>
                     <div id="contatoBloco">
-                        <div id="contatoEmail">
+                        <article id="contatoEmail">
                             <form action="PHPMailer-master/envio.php" method="POST">
                                 <input type="text" id="nome" name="nome" required placeholder="Nome">
                                 <input type="email" id="email" name="email" required placeholder="E-mail">
@@ -189,8 +189,8 @@
                                 <textarea id="mensagem" name="mensagem" required placeholder="Menssagem"></textarea>
                                 <button type="submit">Enviar</button>   
                             </form>
-                        </div>
-                        <div id="contatoOutros">
+                        </article>
+                        <article id="contatoOutros">
                             <ul>
                                 <li>Email: simoni@gmail.com</li>
                                 <li>Telefone: (51) 99481-2165</li>
@@ -203,10 +203,10 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
-                </div><br><br>
-            </article>
+                </section><br><br>
+            </div>
         </main>
         <!-- Parallax -->
         <section class="parallax2">    
