@@ -182,9 +182,10 @@
                     <h1>Entre em contato</h1><br><br><br>
                     <div id="contatoBloco">
                         <div id="contatoEmail">
-                            <form>
+                            <form action="PHPMailer-master/envio.php" method="POST">
                                 <input type="text" id="nome" name="nome" required placeholder="Nome">
-                                <input type="email" id="email" name="email" required placeholder="E-mail">   
+                                <input type="email" id="email" name="email" required placeholder="E-mail">
+                                <input type="text" id="titulo" name="titulo" required placeholder="Titulo">  
                                 <textarea id="mensagem" name="mensagem" required placeholder="Menssagem"></textarea>
                                 <button type="submit">Enviar</button>   
                             </form>

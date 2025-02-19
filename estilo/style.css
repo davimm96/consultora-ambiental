@@ -271,6 +271,9 @@ button {
 
 #mensagem {
     height: 100px;
+    position: relative;
+    top: -25px;
+    margin-bottom: 0px;
 }
 
 #contatoBloco {
