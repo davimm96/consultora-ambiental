@@ -182,13 +182,14 @@
                     <h1>Entre em contato</h1><br><br><br>
                     <div id="contatoBloco">
                         <article id="contatoEmail">
-                            <form action="PHPMailer-master/envio.php" method="POST">
+                            <form id="formContato">
                                 <input type="text" id="nome" name="nome" required placeholder="Nome">
                                 <input type="email" id="email" name="email" required placeholder="E-mail">
                                 <input type="text" id="titulo" name="titulo" required placeholder="Titulo">  
                                 <textarea id="mensagem" name="mensagem" required placeholder="Menssagem"></textarea>
                                 <button type="submit">Enviar</button>   
                             </form>
+                            <em id="status"></em>
                         </article>
                         <article id="contatoOutros">
                             <ul>
@@ -223,6 +224,6 @@
             <p>Desenvolvido por Davi Michaelsen Mergener</p>
             </div>
         </footer-->
-        <script src="script/script.js"></script>
+        <script src="script/script.js" defer></script>
     </body>
 </html>

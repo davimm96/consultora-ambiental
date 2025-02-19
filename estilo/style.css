@@ -303,6 +303,13 @@ button {
     transition-duration: 0.5s;
 }
 
+#status {
+    font-style: italic;
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
 /*Roda-pé*/
 footer {
     height: 11vh;

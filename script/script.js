@@ -119,4 +119,23 @@ footer.addEventListener('click', () => {
    }
  }, 12000)
 
+//Envia email com ajax
+document.addEventListener("DOMContentLoaded", function() {
+   document.getElementById("formContato").addEventListener("submit", function(e){
+      document.getElementById("status").innerHTML = "Aguarde..."
+      e.preventDefault();
+
+      let formData = new FormData(this);
+
+      fetch("PHPMailer-master/envio.php", {
+         method: "POST",
+         body: formData
+      }).then(response => response.text())
+      .then(data => {
+         //console.log(data)
+         document.getElementById("status").innerHTML = "E-mail enviado com sucesso!"
+      })
+   })
+})
+
 
